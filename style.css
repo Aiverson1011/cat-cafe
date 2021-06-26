@@ -1,0 +1,89 @@
+/*pre-site setup. Basic css reset styles*/
+body{
+   margin: 0;
+   padding:0;
+   font-family: helvetica; 
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none;
+}
+
+/*Website styles*/
+
+header{
+    background: orange;
+    height: 100px;
+}
+
+h1{
+    float: left;
+    margin-left: 20px;
+    margin-right: 50px;
+    color:teal;
+    text-shadow: 1px 1px 1px white;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+nav li a {
+    color: teal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Oh, btw, when i put my mouse over the text, do these rules*/
+nav li a:hover{
+    color: white;
+}
+
+/*Main tag rules*/
+main{
+    width: 960px;
+    margin: 30px auto;
+    min-height: 700px;;
+}
+
+/*an ID uses the Number/# sign*/
+#hero{
+    height: 450px;
+    width: 960px;
+}
+
+p{
+    text-align: center;
+}
+
+/*use a period in front of the class name to target all the elements with that class name*/
+.catList{
+    height: 150px;
+    width: 300px;
+}
+
+main li {
+    float: left;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+main li:last-child{
+    margin-right: 0;
+}
+
+footer{
+    height: 100px;
+    background: orange;
+}
+
+footer p{
+    padding-top: 30px;
+}

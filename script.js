@@ -14,7 +14,7 @@ function getamOrpm(time) {
     return time;
 }
 
-function getGreeting(timeOfDay, name, ampm){
+function getGreeting(timeOfDay, name, ampm) {
     let greeting = '';
     // timeOfDay = good morning/ evening
     // name is going to be user input
@@ -56,13 +56,60 @@ function getTimeOfDay(time) {
 
 }
 
-function writeToDocument(message){
+function writeToDocument(message) {
     document.write(message);
 }
 
 // call all of our required functions
-let timeOfDay = getTimeOfDay(time);
+let item1 = getTimeOfDay(time);
 let name = getName();
 let ampm = getamOrpm(time)
-let greeting = getGreeting(timeOfDay, name, ampm);
+let greeting = getGreeting(item1, name, ampm);
 writeToDocument(greeting);
+
+
+let rating = prompt('what is your rating for this restaurant?');
+
+for (let i = 0; i < rating; i++) {
+    document.write('<img class="catStar" src="catCoffee.jpg"/>');
+}
+
+function guessCatsName() {
+    let catName = prompt(' Who owns this cafe? Josie or KittyCat?');
+    while (catName != 'josie') {
+        catName = prompt('Try again. Who owns this cafe? Josie or KittyCat?');
+    }
+    writeToDocument("this function was run by GuessCatName function");
+
+}
+
+// function numbersGame(number1, number2){
+//     let sum = number1 + number2;
+//     let response = '';
+
+//     if(sum > 10000){
+//         response = 'The sum of ' + number1 + ' + ' + number2 + ' is equal too ' + sum + ' and is a more than 10000';
+//     } else{
+//         response = 'The sum of ' + number1 + ' + ' + number2 + ' is equal too ' + sum + ' and is a less than 10000';
+//     }
+
+//     return response;
+// }
+
+// numbersGame(50000, 800);
+
+// // parameters allow us to build logic around variable values
+// function fillUpTank(gradeOfGas, tankSize, pricePerGallon, numberOfFillsAmonth, numberOfMonthhs){
+
+//     // probably make a function for you that tells you how much you will spend over some number of monthhs
+
+// }
+
+// function budget(income1, income2, income3, coreBills, extraBills){
+//     let totalIncome = income1 + income2 + income3;
+//     let moneyLeftOver = totalIncome - coreBills - extraBills;
+
+//     return moneyLeftOver;
+// }
+
+// budget(10, 10,5, 7, 1);

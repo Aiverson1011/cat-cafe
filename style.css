@@ -63,6 +63,10 @@ p{
     text-align: center;
 }
 
+.catStar{
+    height: 100px;
+    width: 100px;
+}
 /*use a period in front of the class name to target all the elements with that class name*/
 .catList{
     height: 150px;
